@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+coverage/
+
+# Environment / secrets (keep the .example templates)
+.env
+.env.*
+!.env.example
+
+# Generated at runtime
+backend/public/qrcodes/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+build_errors.txt
+
+# Editor / OS / local tooling
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+.claude/

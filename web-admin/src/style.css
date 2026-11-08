@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "element-plus/dist/index.css";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --brand-primary: #3b82f6;
+  --brand-secondary: #6366f1;
+  --bg-main: #f8fafc;
+  --sidebar-dark: #0f172a;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: #1e293b;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Premium Shadows */
+.shadow-premium {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+}
+
+/* Element Plus Customization */
+.el-card {
+  --el-card-border-radius: 20px;
+  --el-card-border-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.el-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+.el-button--primary {
+  --el-button-bg-color: #3b82f6;
+  --el-button-hover-bg-color: #2563eb;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+.el-menu {
+  border-right: none !important;
+  background-color: transparent !important;
+}
+
+.el-menu-item {
+  border-radius: 12px;
+  margin: 4px 12px;
+  height: 48px !important;
+  line-height: 48px !important;
+}
+
+.el-menu-item.is-active {
+  background: linear-gradient(135deg, #3b82f6, #6366f1) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Animations */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
